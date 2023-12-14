@@ -8,22 +8,6 @@ body {
     color: var(--text-color) !important;
     font-family: 'ABeeZee', sans-serif;
 }
-.divider, .page-footer, nav, .modal, .modal-footer, .sidenav {
-    background-color: var(--main-color)!important;
-}
-
-/* Nav Bar */
-.brand-logo {
-    font-weight: bold;
-}
-nav img {
-    width: 62px;
-    margin-left: 10px;
-}
-
-nav a {
-    color: #022a1d !important;
-}
 
 img {
     border-radius: var(--border-radius);
@@ -38,6 +22,25 @@ h2 {
     height: 2px;
 }
 
+/* main color */
+.divider, .page-footer, nav, .modal, .modal-footer, .sidenav {
+    background-color: var(--main-color)!important;
+}
+
+/* Nav Bar */
+.brand-logo {
+    font-weight: bold;
+}
+
+nav img {
+    width: 62px;
+    margin-left: 10px;
+}
+
+nav a {
+    color: #022a1d !important;
+}
+
 /* Section "à propos" */
 #section-about {
     height: 500px;
@@ -46,7 +49,7 @@ h2 {
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
-    animation: carousel-nav-images 10s ease-in-out infinite both;
+    animation: carousel-nav-images  10s ease-in-out infinite both;
 }
 
 @keyframes carousel-nav-images {
@@ -58,7 +61,12 @@ h2 {
 #section-about h2 {
     margin-top: 15px;
 }
-#section-about article{
+
+#section-about-choose {
+    font-weight: bold;
+}
+
+#section-about div{
     padding: 15px;
     background-color: rgba(255,255,255,0.7);
     border-radius: var(--border-radius);
@@ -70,7 +78,7 @@ h2 {
     width: 100%;
 }
 
-.div-test {
+.div-section-box {
     width: 250px;
 }
 
@@ -78,14 +86,13 @@ h2 {
     display: grid;
     justify-content: center;
 }
-.div-test img {
+.div-section-box img {
     width: 230px;
     height: 200px;
 }
 .modal {
     border-radius: var(--border-radius);
 }
-
 
 .more-info {
     border-radius: 8px;
@@ -97,15 +104,11 @@ h2 {
 #section-form .container {
     width: 100%;
 }
-/* .section-form-div {
-    width: 100%;
-} */
+
 #section-form-img {
     width: 350px;
 }
-form {
-    padding: 10px;
-}
+
 #section-form p {
     text-align: center;
 }
