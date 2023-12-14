@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <title>Eco Eats</title>
+</head>
+
+<body>
+    <header>
+        <!-- NavBar -->
+        <nav class="nav-wrapper">
+            <div id="carousel-nav"></div>
+            <img src="images/logo5.png" alt="logo">
+            <a href="" class="brand-logo center">ECO EATS</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#section-about">À propos</a></li>
+                <li><a href="#section-how">Comment ça marche</a></li>
+                <li><a href="#section-menu">Menu</a></li>
+                <li><a href="#section-form">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Nav bar burger responsive -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#section-about">À propos</a></li>
+            <li><a href="#section-how">Comment ça marche</a></li>
+            <li><a href="#section-menu">Menu</a></li>
+            <li><a href="#section-form">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <!-- Section A propos -->
+        <section id="section-about">
+            <article class="container center-align">
+                <h2>À propos de nous</h2>
+                <p><em>Fruits</em> et <em>légumes</em> sont choisis avec le grand soin et nous essayons de
+                    travailler avec les
+                    producteurs locaux ! La <em>viande</em> est fraiche et vient d'une petite ferme de notre charmante
+                    ville. Les
+                    plats sont cuisinés par un <em>chef</em> et son apprenti. Tous nos prodruits sont
+                    <strong>bio</strong> !
+                </p>
+                <p id="section-about-choose">Nous choisir c'est :</p>
+                <ul>
+                    <li><i class="material-icons">done</i> Des <strong>produits locaux</strong> 100%
+                        <strong>bio</strong>
+                    </li>
+                    <li><i class="material-icons">done</i> Un délicieux <strong>repas</strong> cuisiné par un
+                        <em>chef</em>
+                    </li>
+                    <li><i class="material-icons">done</i> Une <strong>livraison</strong> rapide !</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Comment ça marche -->
+        <div class="divider"></div>
+        <section id="section-how" class="center-align container">
+            <h2>Comment ça marche ?</h2>
+            <article class="row">
+                <div class="col s4">
+                    <p>Regardez le menu et choisissez</p>
+                </div>
+                <div class="col s4">
+                    <p>Passez commande ou appelez nous</p>
+                </div>
+                <div class="col s4">
+                    <p>On vous livre en moins de 30 minutes !</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Section Menu -->
+        <div class="divider"></div>
+        <section id="section-menu" class="container">
+            <h2>Nos menus 100% <strong>bio</strong></h2>
+            <div class="row">
+                <!-- Hamburger -->
+                <div class="col s12 m6 l3 food">
+                    <p>Hamburger</p>
+                    <div class="row div-test">
+                        <figure class="col s12">
+                            <img class="materialboxed z-depth-3" src="images/hamburger.webp" alt="burger">
+                        </figure>
+                        <!-- prix + bouton en grid -->
+                        <div class="col s6">
+                            <p>14.99 €</p>
+                        </div>
+                        <div class="col s6">
+                            <a class="waves-effect waves-light btn modal-trigger more-info light-green accent-2 black-text"
+                                href="#modal1">+ d'info</a>
+                            <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                    <h4>L'hamburger <strong>bio</strong> !</h4>
+                                    <p>Découvrez notre best-seller ! Viande hachée de boeuf fraiche avec son fromage des
+                                        montagnes dans un bun brioché retourné et toasté</p>
+                                </div>
+                                <div class="modal-footer ">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Délicieux !</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salade complete -->
+                <div class="col s12 m6 l3 food">
+                    <p>Salade complete</p>
+                    <div class="row div-test">
+                        <div class="row">
+                            <figure class="col s12">
+                                <img class="materialboxed z-depth-3" width=250 height="220" src="images/box-repas.PNG"
+                                    alt="salade">
+                            </figure>
+                            <!-- prix + bouton en grid -->
+                            <div class="col s6">
+                                <p>13.50 €</p>
+                            </div>
+                            <div class="col s6">
+                                <a class="waves-effect waves-light btn modal-trigger more-info light-green accent-2 black-text"
+                                    href="#modal2">+ d'info</a>
+                                <div id="modal2" class="modal">
+                                    <div class="modal-content">
+                                        <h4>La salade complète !</h4>
+                                        <p>Un peu de frais dans vos assiettes à domicile avec cette salade complète
+                                            avocat
+                                            et
+                                            boeuf :
+                                            Boeuf, avocat, roquette, tomates cerise, vinaigrette à la mangue</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Délicieux
+                                            !</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Wok Poulet -->
+                <div class="col s12 m6 l3 food">
+                    <p>Wok poulet</p>
+                    <div class="row div-test">
+                        <div class="row">
+                            <figure class="col s12">
+                                <img class="materialboxed z-depth-3" width=250 height="220" src="images/wok-poulet.jpg"
+                                    alt="wok">
+                            </figure>
+                            <!-- prix + bouton en grid -->
+                            <div class="col s6">
+                                <p>13.99 €</p>
+                            </div>
+                            <div class="col s6">
+                                <a class="waves-effect waves-light btn modal-trigger more-info light-green accent-2 black-text"
+                                    href="#modal3">+ d'info</a>
+                                <div id="modal3" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Wok poulet !</h4>
+                                        <p>Nouilles de blé sautées au poulet sauce curry* (recommandée), avec choux,
+                                            oignons
+                                            frits, cébettes et pousses de soja.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soupe automnale -->
+                <div class="col s12 m6 l3 food">
+                    <p>Soupe automnale</p>
+                    <div class="row div-test">
+                        <div class="row">
+                            <figure class="col s12">
+                                <img class="materialboxed z-depth-3" src="images/soupes-repas.jpg" alt="soupe">
+                            </figure>
+                            <!-- prix + bouton en grid -->
+                            <div class="col s6">
+                                <p>12.99 €</p>
+                            </div>
+                            <div class="col s6">
+                                <a class="waves-effect waves-light btn modal-trigger more-info light-green accent-2 black-text"
+                                    href="#modal4">+ d'info</a>
+                                <div id="modal4" class="modal">
+                                    <div class="modal-content">
+                                        <h4>La soupe automnale !</h4>
+                                        <p>Lorsque l'automne se pointe le bout du nez, il n'y a pas plus réconfortant
+                                            qu'un
+                                            bon
+                                            potage de légumes crémeux et fumant. </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Délicieux
+                                            !</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire -->
+        <div class="divider"></div>
+        <section id="section-form">
+            <header>
+                <h2>Formulaire de contact</h2>
+                <p>Vous avez des questions ? Besoin d'un devis? N'hésitez pas à nous contacter avec la formulaire
+                    ci-dessous.
+                    Nous vous repondrons rapidement.</p>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <form class="col m5">
+                        <!-- sexe -->
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">wc</i>
+                                <select>
+                                    <option value="" disabled selected>Choisir une option</option>
+                                    <option value="homme">Homme</option>
+                                    <option value="femme">Femme</option>
+                                </select>
+                                <label>Cvilité</label>
+                            </div>
+                        </div>
+
+                        <!-- Nom et prenom -->
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <label for="nom">Nom *</label>
+                                <input type="text" name="nom" id="nom" required>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" name="prenom" id="prenom" required>
+                            </div>
+                        </div>
+
+                        <!-- mail et tel -->
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">email</i>
+                                <label for="email">E-mail *</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <i class="material-icons prefix">phone_android</i>
+                                <label for="phone">Numero de portable </label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">comment</i>
+                            <textarea id="questions" class="materialize-textarea" data-length="120"></textarea>
+                            <label for="questions">Une question ou un devis, c'est ici !</label>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="submit" value="soumettre" class="light-green accent-2" id="form-submit">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="col m7 right-align">
+                        <img id="section-form-img" src="images/assiette1.png" alt="assiette">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col m2 l2">
+                    <img src="images/logo5.png" width="100" alt="">
+                </div>
+                <div class="col m8 l8 s12 center">
+                    <h5 class="teal-text text-darken-4">ECO EATS</h5>
+                    <p class="teal-text text-darken-4">Un bon repas bio cuisiné à la maison.</p>
+                    <ul>
+                        <li><a href="" class="teal-text text-darken-4">Mention légales</a></li>
+                        <li><a href="" class="teal-text text-darken-4">Conditions d'utilisations</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 m2 s12 center">
+                    <h5 class="teal-text text-darken-4">Links</h5>
+                    <ul>
+                        <li><a class="teal-text text-darken-4" href="#section-about">A propos</a></li>
+                        <li><a class="teal-text text-darken-4" href="#section-how">Comment ça marche ?</a></li>
+                        <li><a class="teal-text text-darken-4" href="#section-menu">Le menu</a></li>
+                        <li><a class="teal-text text-darken-4" href="#section-contact">Contact</a></li>
+                        <li>
+                            <p class="teal-text text-darken-4">06 87 90 76 23</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container teal-text text-darken-4">
+                © 2014 Copyright Text
+                <a class="teal-text text-darken-4 right"
+                    href="https://www.facebook.com/lechaudrondessaisons?locale=fr_FR" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+        $(document).ready(function () { $('.datepicker').datepicker(); });
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+    </script>
+</body>
+
+</html>
