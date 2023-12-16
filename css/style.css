@@ -9,6 +9,11 @@ body {
     font-family: 'ABeeZee', sans-serif;
 }
 
+h1 {
+    margin: 15px;
+    color: var(--text-color)!important;
+}
+
 img {
     border-radius: var(--border-radius);
 }
